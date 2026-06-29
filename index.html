@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمونه کار تعاملی و پروزال اختصاصی - آیدین کاظمی</title>
+    <!-- Font Vazirmatn from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <div class="figma-dot"></div>
+                <span class="logo-text">محسن اسماعیلی <span class="badge">طراح و توسعه‌دهنده UI/UX</span></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">صفحه اصلی</a>
+                <a href="#figma-sim" class="nav-link">شبیه‌ساز فیگما</a>
+                <a href="#wireframe-slider" class="nav-link">وایرفریم تعاملی</a>
+                <a href="#proposal" class="nav-link">ساختار ۶ صفحه شما</a>
+                <a href="#portfolio" class="nav-link">نمونه کارها</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-primary btn-sm">شروع همکاری فوری</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="grid-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-badge">
+                <i class="fa-regular fa-folder-open"></i>
+                <span>پیشنهاد و نمونه کار اختصاصی برای جناب آقای <strong>آیدین کاظمی</strong></span>
+            </div>
+            <h1 class="hero-title">طراحی رابط کاربری <span class="gradient-text">خلاقانه، توسعه‌پذیر و بی‌نقص</span> در فیگما</h1>
+            <p class="hero-subtitle">
+                سلام جناب کاظمی عزیز. بنده محسن اسماعیلی هستم. برای پروژه شما (طراحی ۶ صفحه اختصاصی)، این پرتال تعاملی را طراحی کرده‌ام تا قبل از هر چیز، کیفیت کار، دقت پیکسلی، و تسلط بنده بر فیگما (Figma) و توسعه فرانت‌اند را به صورت زنده و تعاملی لمس کنید.
+            </p>
+            <div class="hero-actions">
+                <a href="#figma-sim" class="btn btn-primary btn-lg">ورود به شبیه‌ساز زنده فیگما <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#proposal" class="btn btn-secondary btn-lg">بررسی ساختار ۶ صفحه پیشنهادی</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">۱۰۰٪</span>
+                    <span class="stat-label">رضایت کارفرما</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">+۶ سال</span>
+                    <span class="stat-label">تجربه تخصصی</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">Auto Layout</span>
+                    <span class="stat-label">طراحی کاملاً اصولی</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me Section (Feature blocks) -->
+    <section class="why-me-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">مزیت فوق‌العاده همکاری با یک طراح-توسعه‌دهنده (Designer-Developer)</h2>
+                <p class="section-desc">بزرگترین چالش پروژه‌ها، عدم هماهنگی طرح طراح با خروجی برنامه‌نویس است. من این مشکل را ریشه‌ای حل کرده‌ام.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>اتولایه و سیستم گرید استاندارد</h3>
+                    <p>تمام فریم‌ها در فیگما با ویژگی قدرتمند Auto-Layout و سیستم گرید ۱۲ ستونی طراحی می‌شوند تا طرح کاملاً ریسپانسیو و منظم باشد.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>منطبق بر اصول فنی فرانت‌اند</h3>
+                    <p>به عنوان برنامه‌نویس ارشد، طرح را طوری می‌زنم که پیاده‌سازی آن با CSS/Tailwind برای برنامه‌نویس شما مثل آب خوردن و فوق‌العاده روان باشد.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>طراحی کامپوننت‌محور (Component-Based)</h3>
+                    <p>استایل‌های رنگی، متنی، دکمه‌ها و فرم‌ها همگی به صورت کامپوننت‌های reusable با Variants مختلف ساخته می‌شوند تا طرح تمیز و یکپارچه باشد.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Figma Workspace Simulator Section -->
+    <section id="figma-sim" class="figma-sim-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fa-brands fa-figma"></i> شبیه‌ساز زنده پنل فیگما (Figma UI Inspector)</h2>
+                <p class="section-desc">برای اولین بار، نحوه چینش لایه‌ها، کامپوننت‌ها و خروجی استایل‌های فنی یکی از طرح‌های بنده را مستقیماً در این پنل شبیه‌سازی‌شده تست کنید. روی اجزای داخل بوم (Canvas) کلیک کنید تا مشخصات فنی آن‌ها را ببینید!</p>
+            </div>
+
+            <!-- Figma UI Container -->
+            <div class="figma-window">
+                <!-- Figma Header/Toolbar -->
+                <div class="figma-toolbar">
+                    <div class="toolbar-left">
+                        <span class="figma-menu-icon"><i class="fa-brands fa-figma text-orange"></i></span>
+                        <div class="tool-buttons">
+                            <span class="tool-btn active" title="Move (V)"><i class="fa-solid fa-mouse-pointer"></i></span>
+                            <span class="tool-btn" title="Region (F)"><i class="fa-solid fa-border-all"></i></span>
+                            <span class="tool-btn" title="Shape (R)"><i class="fa-regular fa-square"></i></span>
+                            <span class="tool-btn" title="Pen (P)"><i class="fa-solid fa-pen-nib"></i></span>
+                            <span class="tool-btn" title="Text (T)"><i class="fa-solid fa-font"></i></span>
+                            <span class="tool-btn" title="Hand (H)"><i class="fa-regular fa-hand"></i></span>
+                            <span class="tool-btn" title="Comment (C)"><i class="fa-regular fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <div class="toolbar-center">
+                        <span class="project-name">پروژه جناب کاظمی - صفحه لندینگ پیش‌فرض</span>
+                        <span class="scale-percent">100% <i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="toolbar-right">
+                        <div class="user-avatar-group">
+                            <div class="figma-avatar" style="background-color: #f2994a;">A</div>
+                            <div class="figma-avatar" style="background-color: #2f80ed;">M</div>
+                        </div>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                        <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                </div>
+
+                <!-- Figma Main Area -->
+                <div class="figma-workspace">
+                    <!-- Left Sidebar (Layers & Components) -->
+                    <aside class="figma-sidebar left-sidebar">
+                        <div class="sidebar-tabs">
+                            <span class="tab active">Layers</span>
+                            <span class="tab">Assets</span>
+                        </div>
+                        <div class="layers-list">
+                            <div class="layer-item page-node">
+                                <i class="fa-solid fa-file-invoice"></i> <span>صفحات پروژه (۶ صفحه)</span>
+                            </div>
+                            <div class="layer-item frame-node active" data-node="desktop-hero">
+                                <i class="fa-solid fa-desktop"></i> <span class="layer-name">Desktop - Hero Section</span>
+                            </div>
+                            <div class="layer-children">
+                                <div class="layer-item group-node" data-node="navbar">
+                                    <i class="fa-solid fa-layer-group"></i> <span class="layer-name">Navigation Bar</span>
+                                </div>
+                                <div class="layer-item text-node" data-node="hero-title">
+                                    <i class="fa-solid fa-font"></i> <span class="layer-name">Heading Title</span>
+                                </div>
+                                <div class="layer-item group-node" data-node="hero-actions">
+                                    <i class="fa-solid fa-layer-group"></i> <span class="layer-name">Action Buttons</span>
+                                </div>
+                                <div class="layer-item component-node" data-node="primary-btn">
+                                    <i class="fa-solid fa-cube text-purple"></i> <span class="layer-name">❖ Button/Primary</span>
+                                </div>
+                                <div class="layer-item component-node" data-node="hero-card">
+                                    <i class="fa-solid fa-cube text-purple"></i> <span class="layer-name">❖ Info Card</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Canvas (Middle Area) -->
+                    <div class="figma-canvas">
+                        <div class="grid-pattern"></div>
+                        
+                        <!-- Rulers -->
+                        <div class="ruler ruler-h"></div>
+                        <div class="ruler ruler-v"></div>
+
+                        <!-- Canvas Frame Container -->
+                        <div class="canvas-frame" id="canvas-frame-node">
+                            <div class="frame-label">Desktop - Hero Section (1440 x 800)</div>
+                            
+                            <!-- Mock Landing Page Design inside Canvas -->
+                            <div class="mock-design-container">
+                                
+                                <!-- Mock Header (Nav) -->
+                                <div class="mock-nav canvas-target" id="node-navbar" data-name="Navigation Bar" data-type="Auto Layout" data-padding="24px 80px" data-gap="32px">
+                                    <div class="mock-logo">Aydin<span class="dot">.</span>Creative</div>
+                                    <div class="mock-menu">
+                                        <span>خانه</span>
+                                        <span>خدمات</span>
+                                        <span>پروژه‌ها</span>
+                                        <span>درباره ما</span>
+                                    </div>
+                                    <div class="mock-nav-btn">پورتفولیو</div>
+                                    
+                                    <!-- Selection highlight representation -->
+                                    <div class="selection-box">
+                                        <span class="selection-badge">Navigation Bar (Auto Layout)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Mock Hero Body -->
+                                <div class="mock-hero-body">
+                                    <h1 class="mock-title canvas-target" id="node-hero-title" data-name="Heading Title" data-type="Text Element" data-font="Vazirmatn (900)" data-size="48px" data-color="#FFFFFF" data-lh="1.3">
+                                        تحول دیجیتال برند شما با <span class="text-gradient">طراحی مدرن</span>
+                                        <div class="selection-box">
+                                            <span class="selection-badge">Heading Title (Text)</span>
+                                        </div>
+                                    </h1>
+                                    
+                                    <!-- Actions -->
+                                    <div class="mock-actions canvas-target" id="node-hero-actions" data-name="Action Buttons" data-type="Auto Layout (Row)" data-gap="16px" data-padding="0px">
+                                        <div class="mock-btn mock-btn-primary canvas-target" id="node-primary-btn" data-name="❖ Button/Primary" data-type="Component Instance" data-padding="12px 28px" data-radius="8px" data-bg="#6C5DD3">
+                                            مشاهده دمو
+                                            <div class="selection-box">
+                                                <span class="selection-badge">❖ Button/Primary</span>
+                                            </div>
+                                        </div>
+                                        <div class="mock-btn mock-btn-secondary">مشاوره رایگان</div>
+                                        <div class="selection-box">
+                                            <span class="selection-badge">Action Buttons (Auto Layout)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Quick cards -->
+                                    <div class="mock-cards-row">
+                                        <div class="mock-info-card canvas-target" id="node-hero-card" data-name="❖ Info Card" data-type="Component Instance" data-padding="24px" data-radius="16px" data-bg="rgba(255,255,255,0.03)" data-border="1px solid rgba(255,255,255,0.08)">
+                                            <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                            <h4>طراحی خلاقانه</h4>
+                                            <p>رابط کاربری منحصربه‌فرد و متناسب با پرسونای مخاطب شما.</p>
+                                            <div class="selection-box">
+                                                <span class="selection-badge">❖ Info Card</span>
+                                            </div>
+                                        </div>
+                                        <div class="mock-info-card">
+                                            <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                            <h4>بهینه‌سازی نرخ تبدیل</h4>
+                                            <p>افزایش فروش و جذب کاربر با چیدمان اصولی UX.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Sidebar (Properties & Styles Inspector) -->
+                    <aside class="figma-sidebar right-sidebar">
+                        <div class="sidebar-tabs">
+                            <span class="tab active">Design</span>
+                            <span class="tab">Prototype</span>
+                            <span class="tab">Inspect</span>
+                        </div>
+                        
+                        <!-- Properties Panel Content (Changes dynamically on target click) -->
+                        <div class="properties-panel" id="properties-panel">
+                            <!-- Frame Meta Info (Default) -->
+                            <div class="panel-section">
+                                <div class="section-title">Selection</div>
+                                <div class="selected-node-name" id="selected-node-name">Desktop - Hero Section</div>
+                                <div class="node-type-tag" id="selected-node-type">Frame</div>
+                            </div>
+
+                            <!-- Layout Properties -->
+                            <div class="panel-section">
+                                <div class="section-title">Layout & Dimension</div>
+                                <div class="layout-grid-inputs">
+                                    <div class="input-group">
+                                        <label>W</label>
+                                        <input type="text" id="prop-width" value="1440" readonly>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>H</label>
+                                        <input type="text" id="prop-height" value="800" readonly>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>X</label>
+                                        <input type="text" id="prop-posx" value="120" readonly>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Y</label>
+                                        <input type="text" id="prop-posy" value="80" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Auto Layout Section -->
+                            <div class="panel-section" id="section-autolayout">
+                                <div class="section-title">Auto Layout</div>
+                                <div class="autolayout-info">
+                                    <div class="info-row">
+                                        <span>Direction:</span>
+                                        <strong id="autolayout-dir">Vertical <i class="fa-solid fa-arrow-down"></i></strong>
+                                    </div>
+                                    <div class="info-row">
+                                        <span>Spacing/Gap:</span>
+                                        <strong id="autolayout-gap">64px</strong>
+                                    </div>
+                                    <div class="info-row">
+                                        <span>Padding:</span>
+                                        <strong id="autolayout-padding">80px 120px</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Typography Section (shows only for text) -->
+                            <div class="panel-section" id="section-typography" style="display: none;">
+                                <div class="section-title">Text Style</div>
+                                <div class="typography-info">
+                                    <div class="info-row">
+                                        <span>Font Family:</span>
+                                        <strong id="font-family">Vazirmatn</strong>
+                                    </div>
+                                    <div class="info-row">
+                                        <span>Font Size:</span>
+                                        <strong id="font-size">48px</strong>
+                                    </div>
+                                    <div class="info-row">
+                                        <span>Line Height:</span>
+                                        <strong id="font-lh">1.3</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fill / Stroke -->
+                            <div class="panel-section">
+                                <div class="section-title">Styles</div>
+                                <div class="style-row">
+                                    <div class="style-color-dot" id="style-bg-color" style="background-color: #0d0d11;"></div>
+                                    <span class="style-hex" id="style-hex-text">#0D0D11</span>
+                                    <span class="style-opacity">100%</span>
+                                </div>
+                                <div class="style-row" id="row-radius-info">
+                                    <i class="fa-solid fa-circle-notch"></i>
+                                    <span>Corner Radius:</span>
+                                    <strong id="style-radius" style="margin-right: auto;">0px</strong>
+                                </div>
+                            </div>
+
+                            <!-- Design System Alert -->
+                            <div class="panel-section alert-section">
+                                <i class="fa-solid fa-circle-check text-success"></i>
+                                <p>این کامپوننت متصل به سیستم دیزاین (Design System) هماهنگ پروژه است.</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Wireframe to High-Fi Slider Section -->
+    <section id="wireframe-slider" class="slider-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">مقایسه زنده: از وایرفریم خطی تا طرح نهایی (Hi-Fi)</h2>
+                <p class="section-desc">با کشیدن هندل وسط به سمت چپ و راست، ببینید چطور ساختار اولیه و ساختاریافته وب‌سایت با جادوی دیزاین به یک شاهکار تعاملی و جذاب تبدیل می‌شود.</p>
+            </div>
+
+            <!-- Slider Wrapper -->
+            <div class="comparison-slider-wrapper">
+                <div class="comparison-slider">
+                    
+                    <!-- High-Fi (Bottom Image/View) -->
+                    <div class="slider-view view-hifi">
+                        <div class="mock-page-preview hifi-content">
+                            <div class="header-mock">
+                                <span class="logo">Aydin.Inc</span>
+                                <span class="cta-btn">سفارش پروژه</span>
+                            </div>
+                            <div class="hero-mock-content">
+                                <span class="tag">محصول سال ۲۰۲۶</span>
+                                <h2>سیستم مدیریت هوشمند فرآیندها</h2>
+                                <p>کسب و کار خود را با قوی‌ترین پلتفرم تحلیل داده‌ها و هوش مصنوعی هماهنگ کنید و بهره‌وری تیم خود را تا ۳ برابر افزایش دهید.</p>
+                                <div class="btn-group-mock">
+                                    <span class="btn-mock p-btn">شروع نسخه آزمایشی</span>
+                                    <span class="btn-mock s-btn">ویدیو دمو <i class="fa-regular fa-circle-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="dashboard-preview-card">
+                                <div class="card-header-mock">
+                                    <span class="dot-m red"></span>
+                                    <span class="dot-m yellow"></span>
+                                    <span class="dot-m green"></span>
+                                </div>
+                                <div class="card-body-mock">
+                                    <div class="mock-chart">
+                                        <div class="bar" style="height: 60%"></div>
+                                        <div class="bar" style="height: 80%"></div>
+                                        <div class="bar" style="height: 45%"></div>
+                                        <div class="bar" style="height: 95%"></div>
+                                        <div class="bar" style="height: 70%"></div>
+                                    </div>
+                                    <div class="mock-stats-mini">
+                                        <span>نرخ تبدیل: <strong>+۲۴٪</strong></span>
+                                        <span>کاربران فعال: <strong>۴,۸۵۰ نفر</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wireframe (Top Clipped View) -->
+                    <div class="slider-view view-wireframe">
+                        <div class="mock-page-preview wireframe-content">
+                            <div class="header-mock">
+                                <span class="logo-wire">| LOGO |</span>
+                                <span class="cta-btn-wire">[ BUTTON ]</span>
+                            </div>
+                            <div class="hero-mock-content">
+                                <span class="tag-wire">[ Tagline / Label ]</span>
+                                <h2 class="wire-title">عنوان اصلی صفحه (Heading H1)</h2>
+                                <p class="wire-desc">توضیحات کوتاه درباره محصول یا ارزش پیشنهادی کسب و کار که در دو یا سه خط در این بخش قرار می‌گیرد و به درک بهتر کمک می‌کند.</p>
+                                <div class="btn-group-mock">
+                                    <span class="btn-mock-wire">[ Primary Button ]</span>
+                                    <span class="btn-mock-wire">[ Secondary ]</span>
+                                </div>
+                            </div>
+                            <div class="dashboard-preview-card wire-card">
+                                <div class="card-header-mock">
+                                    <span class="dot-wire"></span>
+                                    <span class="dot-wire"></span>
+                                    <span class="dot-wire"></span>
+                                </div>
+                                <div class="card-body-mock wire-body">
+                                    <div class="mock-placeholder-box">
+                                        <div class="wire-cross"></div>
+                                        <span>محل قرارگیری تصویر یا داشبورد تعاملی (Image Placeholder)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Control Handle -->
+                    <div class="slider-handle">
+                        <div class="handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Theme / Design System Showcase Section -->
+    <section class="design-system-config">
+        <div class="container">
+            <div class="config-box">
+                <div class="config-info">
+                    <h3>سیستم دیزاین هوشمند و زنده</h3>
+                    <p>یکی از اصول اساسی من در طراحی، تعریف درست متغیرها (Variables) و استایل‌های مشترک است. رنگ برند خود را از پنل روبه‌رو تغییر دهید تا ببینید کل پلتفرم چطور خودش را به صورت آنی هماهنگ می‌کند!</p>
+                </div>
+                <div class="config-controls">
+                    <span class="control-label">انتخاب تم رنگی پروژه شما:</span>
+                    <div class="theme-buttons">
+                        <button class="theme-btn active" data-primary="#6C5DD3" data-primary-glow="rgba(108, 93, 211, 0.4)" style="background-color: #6C5DD3;">بنفش فیگما</button>
+                        <button class="theme-btn" data-primary="#00E5FF" data-primary-glow="rgba(0, 229, 255, 0.4)" style="background-color: #00E5FF;">آبی نئون</button>
+                        <button class="theme-btn" data-primary="#10B981" data-primary-glow="rgba(16, 185, 129, 0.4)" style="background-color: #10B981;">سبز زمردی</button>
+                        <button class="theme-btn" data-primary="#F59E0B" data-primary-glow="rgba(245, 158, 11, 0.4)" style="background-color: #F59E0B;">طلایی پرمیوم</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposal Plan for 6 Pages Section -->
+    <section id="proposal" class="proposal-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge-top">نقشه راه پروژه شما</span>
+                <h2 class="section-title">برنامه پیشنهادی طراحی ۶ صفحه وب‌سایت شما</h2>
+                <p class="section-desc">بر اساس تجربه من، برای ارائه یک تجربه کامل و بی‌نقص بدون نیاز به نسخه‌های موبایل، ساختار ۶ صفحه زیر را پیشنهاد می‌کنم که البته طبق سلیقه شما کاملاً قابل ویرایش است:</p>
+            </div>
+
+            <div class="proposal-grid">
+                <!-- Page 1 -->
+                <div class="proposal-card">
+                    <div class="page-num">۰۱</div>
+                    <h3>صفحه اصلی (Landing Page)</h3>
+                    <p>ویترین اصلی برند شما. شامل بنر قهرمان (Hero)، ارزش پیشنهادی، معرفی خدمات کلیدی، بخش اثبات اجتماعی (نظرات و مشتریان)، و فراخوانی به اقدام (CTA) جذاب.</p>
+                    <ul class="page-features">
+                        <li><i class="fa-solid fa-check"></i> بیشترین تمرکز روی زیبایی بصری</li>
+                        <li><i class="fa-solid fa-check"></i> انیمیشن‌های تعاملی اولیه</li>
+                    </ul>
+                </div>
+                <!-- Page 2 -->
+                <div class="proposal-card">
+                    <div class="page-num">۰۲</div>
+                    <h3>صفحه خدمات / محصولات (Services)</h3>
+                    <p>معرفی تخصصی و جزئیات خدماتی که ارائه می‌دهید یا محصولات اصلی شما همراه با آیکون‌های اختصاصی و چینش شبکه‌ای (Grid) بسیار منظم.</p>
+                    <ul class="page-features">
+                        <li><i class="fa-solid fa-check"></i> طراحی آیکون‌ها و فریم‌های اختصاصی</li>
+                        <li><i class="fa-solid fa-check"></i> فیلترهای تعاملی ساده</li>
+                    </ul>
+                </div>
+                <!-- Page 3 -->
+                <div class="proposal-card">
+                    <div class="page-num">۰۳</div>
+                    <h3>صفحه درباره ما (About Us)</h3>
+                    <p>روایت داستان شکل‌گیری برند شما، چشم‌انداز، ارزش‌ها و معرفی اعضای کلیدی تیم با کارت‌های مدرن و استایل‌های تمیز پرسنلی.</p>
+                    <ul class="page-features">
+                        <li><i class="fa-solid fa-check"></i> گالری تصاویر بهینه‌سازی شده</li>
+                        <li><i class="fa-solid fa-check"></i> تایم‌لاین شیک از افتخارات</li>
+                    </ul>
+                </div>
+                <!-- Page 4 -->
+                <div class="proposal-card">
+                    <div class="page-num">۰۴</div>
+                    <h3>صفحه وبلاگ / مقالات (Blog Hub)</h3>
+                    <p>چیدمان شیک مقالات و اخبار سایت به همراه فیلتر دسته‌بندی‌ها، دکمه‌های اشتراک‌گذاری، مقالات پیشنهادی و ساختار خوانایی عالی برای بهبود SEO.</p>
+                    <ul class="page-features">
+                        <li><i class="fa-solid fa-check"></i> تایپوگرافی ویژه برای خوانایی بالا</li>
+                        <li><i class="fa-solid fa-check"></i> کارت‌های مقالات پویا</li>
+                    </ul>
+                </div>
+                <!-- Page 5 -->
+                <div class="proposal-card">
+                    <div class="page-num">۰۵</div>
+                    <h3>صفحه تکی مقاله / جزئیات خدمت (Single Page)</h3>
+                    <p>طرح جزئیات یک مقاله متنی یا صفحه لندینگ اختصاصی برای یکی از خدمات کلیدی شما که بیشترین نرخ تبدیل مخاطب به مشتری را دارد.</p>
+                    <ul class="page-features">
+                        <li><i class="fa-solid fa-check"></i> بخش کامنت‌ها و تعامل با کاربر</li>
+                        <li><i class="fa-solid fa-check"></i> سایدبار بنرهای تبلیغاتی و لینک‌ها</li>
+                    </ul>
+                </div>
+                <!-- Page 6 -->
+                <div class="proposal-card">
+                    <div class="page-num">۰۶</div>
+                    <h3>صفحه تماس با ما (Contact Us)</h3>
+                    <p>فرم تعاملی و زیبا جهت دریافت اطلاعات کاربران، نقشه شبیه‌سازی شده لوکیشن، اطلاعات تماس شبکه‌های اجتماعی و آدرس‌های فیزیکی.</p>
+                    <ul class="page-features">
+                        <li><i class="fa-solid fa-check"></i> اعتبارسنجی بصری فیلدهای فرم</li>
+                        <li><i class="fa-solid fa-check"></i> لینک‌های تعاملی شبکه‌های اجتماعی</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UI/UX Sample Gallery (Figma static screen mockups) -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">برخی از پروژه‌های اخیر طراحی شده در فیگما</h2>
+                <p class="section-desc">پروژه‌های قبلی که با آخرین استانداردهای طراحی در سال ۲۰۲۵ و ۲۰۲۶ انجام شده‌اند. روی هر کارت کلیک کنید تا جزئیات و ساختار اتولایه آن را بررسی کنید.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item-card">
+                    <div class="card-img-area">
+                        <div class="mock-ui-thumbnail ui-fintech">
+                            <div class="circle-glow"></div>
+                            <div class="mini-card-overlay">
+                                <span>اعتبار کیف پول</span>
+                                <h3>$۴۵,۲۰۰</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info-area">
+                        <span class="item-tag">Fintech App</span>
+                        <h4>داشبورد مدیریت مالی ارز دیجیتال "پریسم"</h4>
+                        <p>برنده جایزه بهترین رابط کاربری مینیمال در سال ۲۰۲۵. طراحی کاملاً ماژولار و مبتنی بر کامپوننت‌های وکتور.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item-card">
+                    <div class="card-img-area">
+                        <div class="mock-ui-thumbnail ui-saas">
+                            <div class="circle-glow green"></div>
+                            <div class="mini-card-overlay green">
+                                <span>نرخ بهره‌وری تیم</span>
+                                <h3>۹۸.۴٪</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info-area">
+                        <span class="item-tag">SaaS Platform</span>
+                        <h4>پلتفرم ابری مدیریت وظایف "تسکینو"</h4>
+                        <p>رابط کاربری پیچیده ولی ساده‌شده برای استفاده کاربر نهایی با ساختار دارک مود چشم‌نواز و دسترسی‌پذیری فوق‌العاده.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item-card">
+                    <div class="card-img-area">
+                        <div class="mock-ui-thumbnail ui-shop">
+                            <div class="circle-glow purple"></div>
+                            <div class="mini-card-overlay purple">
+                                <span>خرید موفق</span>
+                                <h3>۱۲,۴۰۰+</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info-area">
+                        <span class="item-tag">E-Commerce</span>
+                        <h4>فروشگاه اینترنتی محصولات صوتی "بیتز اکسپرس"</h4>
+                        <p>تجربه خرید سریع، سبد خرید متحرک و نمایش محصولات به صورت سه‌بعدی و تعاملی جهت افزایش چشمگیر نرخ فروش.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-content">
+                    <div class="contact-badge">آماده شروع همکاری فوری</div>
+                    <h2>همین امروز پروژه طراحی خود را با بالاترین کیفیت استارت بزنید!</h2>
+                    <p>جناب کاظمی گرامی، بنده تمام هماهنگی‌ها، متغیرها و اصول اتولایه در فیگما را آماده کرده‌ام تا بلافاصله پس از موافقت شما کار طراحی وایدفریم‌های اولیه صفحات شما را آغاز کنم. ما می‌توانیم با هم یک شاهکار بصری عالی بسازیم.</p>
+                    
+                    <div class="workflow-steps">
+                        <div class="step">
+                            <div class="step-num">۱</div>
+                            <div>
+                                <strong>تایید ساختار کلی وایدفریم‌ها:</strong> مطمئن می‌شویم همه‌چیز سر جای خود قرار دارد.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">۲</div>
+                            <div>
+                                <strong>طراحی کانسپت بصری اصلی:</strong> رنگ‌بندی، لوگو و تایید تم اصلی.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">۳</div>
+                            <div>
+                                <strong>طراحی نهایی صفحات و تست:</strong> اعمال تغییرات تا رضایت کامل ۱۰۰ درصدی شما.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-area">
+                    <div class="form-title">فرم تعامل سریع با محسن اسماعیلی</div>
+                    <div class="fast-action-buttons">
+                        <button class="action-btn-fast active" id="btn-msg-1">تایید ساختار و شروع فوری کار</button>
+                        <button class="action-btn-fast" id="btn-msg-2">ارسال فایل‌های پروپوزال تکمیلی</button>
+                        <button class="action-btn-fast" id="btn-msg-3">درخواست قرار تماس تصویری/صوتی کوتاه‌مدت</button>
+                    </div>
+                    
+                    <div class="live-chat-preview">
+                        <div class="chat-header">
+                            <div class="status-dot"></div>
+                            <span>گفتگو با محسن اسماعیلی (پاسخگویی سریع)</span>
+                        </div>
+                        <div class="chat-messages" id="chat-messages">
+                            <div class="msg received">
+                                سلام جناب کاظمی عزیز! خوشحالم که نمونه کارهای تعاملی بنده رو بررسی می‌کنید. پروژه ۶ صفحه‌ای شما یکی از جذاب‌ترین کارهای من خواهد شد. آماده شروع هستید؟
+                            </div>
+                        </div>
+                        <div class="chat-input-area">
+                            <input type="text" id="chat-input" placeholder="پیام خود را بنویسید...">
+                            <button id="send-chat-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>طراحی و توسعه داده شده با <i class="fa-solid fa-heart text-red"></i> توسط محسن اسماعیلی برای جناب آقای آیدین کاظمی - ۲۰۲۶</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
