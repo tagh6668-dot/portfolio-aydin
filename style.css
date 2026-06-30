@@ -5,18 +5,67 @@
     --primary: #6C5DD3;
     --primary-rgb: 108, 93, 211;
     --primary-glow: rgba(108, 93, 211, 0.4);
-    --bg-dark: #0D0D11;
-    --bg-card: #18181C;
-    --bg-card-hover: #222228;
-    --border-color: rgba(255, 255, 255, 0.08);
+    --bg-dark: #07070a; /* تیره عمیق‌تر برای جلوه درخشش بهتر */
+    --bg-card: rgba(24, 24, 28, 0.45); /* گلس‌مورفیسم نیمه شفاف */
+    --bg-card-hover: rgba(34, 34, 40, 0.6);
+    --border-color: rgba(255, 255, 255, 0.05);
     --text-main: #F4F4F6;
     --text-muted: #9E9EAF;
     --text-gradient: linear-gradient(135deg, #A78BFA 0%, #6C5DD3 100%);
-    --figma-bg: #1E1E1E;
-    --figma-panel: #2C2C2C;
-    --figma-border: #3F3F3F;
+    --figma-bg: #1A1A1E;
+    --figma-panel: #242428;
+    --figma-border: #2F2F34;
     --font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* انیمیشن‌های نرم‌تر و جذاب‌تر */
+}
+
+/* ==========================================
+   PREMIUM GLOWING BACKGROUND
+   ========================================== */
+.glow-bg-ball {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.15;
+    z-index: -10;
+    pointer-events: none;
+    animation: floatGlow 15s infinite ease-in-out alternate;
+}
+
+.ball-1 {
+    width: 450px;
+    height: 450px;
+    background-color: var(--primary);
+    top: -100px;
+    left: -150px;
+}
+
+.ball-2 {
+    width: 550px;
+    height: 550px;
+    background-color: #00E5FF;
+    bottom: -150px;
+    right: -150px;
+    animation-delay: -5s;
+}
+
+.ball-3 {
+    width: 380px;
+    height: 380px;
+    background-color: #bb6bd9;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: -10s;
+}
+
+@keyframes floatGlow {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(60px, 50px) scale(1.15);
+    }
 }
 
 * {
@@ -31,7 +80,7 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-main);
     overflow-x: hidden;
-    line-height: 1.6;
+    line-height: 1.7; /* ارتقای فاصله‌بندی متن‌ها برای خوانایی بهتر */
 }
 
 .container {
@@ -321,13 +370,15 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 32px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     transition: var(--transition);
 }
 
 .feature-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(108, 93, 211, 0.4);
-    box-shadow: 0 12px 30px rgba(108, 93, 211, 0.1);
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(108, 93, 211, 0.45);
+    box-shadow: 0 16px 40px rgba(108, 93, 211, 0.15), inset 0 0 12px rgba(255, 255, 255, 0.05);
 }
 
 .feature-icon {
@@ -1342,12 +1393,15 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 16px;
     padding: 32px;
     position: relative;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     transition: var(--transition);
 }
 
 .proposal-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(108, 93, 211, 0.3);
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(108, 93, 211, 0.45);
+    box-shadow: 0 16px 40px rgba(108, 93, 211, 0.15), inset 0 0 12px rgba(255, 255, 255, 0.05);
 }
 
 .page-num {
@@ -1413,13 +1467,16 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     overflow: hidden;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     transition: var(--transition);
     cursor: pointer;
 }
 
 .portfolio-item-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(108, 93, 211, 0.4);
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(108, 93, 211, 0.45);
+    box-shadow: 0 16px 40px rgba(108, 93, 211, 0.15), inset 0 0 12px rgba(255, 255, 255, 0.05);
 }
 
 .card-img-area {
@@ -1523,7 +1580,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-box {
-    background: linear-gradient(135deg, rgba(108, 93, 211, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    background: rgba(24, 24, 28, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--border-color);
     border-radius: 24px;
     padding: 56px;
@@ -1531,6 +1590,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1.2fr 1fr;
     gap: 56px;
     align-items: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
 }
 
 .contact-badge {
@@ -1599,6 +1659,8 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 24px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .form-title {
