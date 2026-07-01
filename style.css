@@ -989,13 +989,16 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0,0,0,0.4);
     border: 1px solid var(--border-color);
+    height: calc(520px * var(--slider-scale, 1));
 }
 
 .comparison-slider {
     position: relative;
-    width: 100%;
+    width: 900px; /* قفل شدن بر روی عرض بهینه پیش‌نمایش طرح دسکتاپ */
     height: 520px;
     user-select: none;
+    transform: scale(var(--slider-scale, 1));
+    transform-origin: top right; /* تراز از راست به چپ متناسب با RTL */
 }
 
 .slider-view {
@@ -1833,14 +1836,188 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================
-   RESPONSIVE DESIGN (WITHOUT MOBILE VIEWS AS REQUESTED)
+   COMPLETE RESPONSIVE & MOBILE DESIGN
    ========================================== */
-/* We keep it responsive on wider screens, but tailored for desktop preview as requested */
 @media (max-width: 1024px) {
     .features-grid, .proposal-grid, .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
     .contact-box {
         grid-template-columns: 1fr;
+        padding: 40px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* global container adjustments */
+    .container {
+        padding: 0 16px;
+    }
+    
+    /* typography */
+    .section-title {
+        font-size: 1.6rem;
+    }
+    .section-desc {
+        font-size: 0.95rem;
+    }
+    .section-header {
+        margin-bottom: 36px;
+    }
+
+    /* main header mobile scroll menu */
+    .header-container {
+        flex-direction: column;
+        gap: 16px;
+        padding: 8px 0;
+    }
+    .logo-area {
+        width: 100%;
+        justify-content: center;
+    }
+    .logo-text {
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .nav-menu {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 8px 16px;
+        gap: 16px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+    .nav-menu::-webkit-scrollbar {
+        display: none; /* Safari & Chrome */
+    }
+    .header-cta {
+        width: 100%;
+    }
+    .header-cta .btn {
+        width: 100%;
+    }
+
+    /* hero section */
+    .hero-section {
+        padding: 60px 0;
+    }
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+    }
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+    .hero-actions .btn {
+        width: 100%;
+    }
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        padding-top: 24px;
+    }
+
+    /* features */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* figma workspace simulator mobile stacking */
+    .figma-window {
+        height: auto;
+        min-height: 850px;
+    }
+    .figma-toolbar {
+        height: auto;
+        padding: 12px;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .toolbar-left, .toolbar-center, .toolbar-right {
+        width: 100%;
+        justify-content: center;
+    }
+    .tool-buttons, .toolbar-right .share-btn, .user-avatar-group {
+        display: none !important; /* پنهان کردن ابزارهای اضافه دسکتاپ در موبایل */
+    }
+    .project-name {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .figma-workspace {
+        flex-direction: column;
+    }
+    .figma-sidebar {
+        width: 100%;
+        max-height: 180px;
+        overflow-y: auto;
+        border: none;
+    }
+    .left-sidebar {
+        border-bottom: 1px solid var(--figma-border);
+    }
+    .right-sidebar {
+        border-top: 1px solid var(--figma-border);
+        max-height: 250px;
+    }
+    .figma-canvas {
+        height: 380px;
+        padding: 16px;
+    }
+    .canvas-frame {
+        transform: scale(0.7); /* کوچک کردن مقیاس فریم بوم در موبایل */
+    }
+
+    /* proposal & portfolio */
+    .proposal-grid, .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* contact workflow & chat console */
+    .contact-box {
+        padding: 24px;
+    }
+    .contact-content h2 {
+        font-size: 1.6rem;
+    }
+    .step {
+        gap: 12px;
+    }
+    .step-num {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+    .workflow-steps {
+        gap: 16px;
+    }
+    .contact-form-area {
+        padding: 16px;
+    }
+    
+    /* footer */
+    .footer-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .canvas-frame {
+        transform: scale(0.55); /* مقیاس فشرده‌تر برای گوشی‌های با صفحه نمایش باریک */
     }
 }

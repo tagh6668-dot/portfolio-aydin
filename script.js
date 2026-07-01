@@ -218,8 +218,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         window.addEventListener('touchmove', (e) => {
             if (!isDragging) return;
-            moveSlider(e.touches[0].clientX);
+            if (e.touches.length > 0) {
+                moveSlider(e.touches[0].clientX);
+            }
         });
+
+        // Dynamic scaling of slider on mobile and tablet screens
+        const scaleSlider = () => {
+            const wrapper = document.querySelector('.comparison-slider-wrapper');
+            if (wrapper) {
+                const rect = wrapper.getBoundingClientRect();
+                const scale = Math.min(1, rect.width / 900);
+                wrapper.style.setProperty('--slider-scale', scale);
+            }
+        };
+        
+        window.addEventListener('resize', scaleSlider);
+        scaleSlider(); // Initial scale
     }
 
 
