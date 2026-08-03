@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 
-    function handleMohsenResponse() {
+    function handleRezaResponse() {
         appendMessage('در حال تایپ...', 'received');
         const typingIndicator = chatMessages.lastChild;
 
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Remove typing indicator
             typingIndicator.remove();
             
-            // Realistic and friendly response representing Mohsen Esmaeili
+            // Realistic and friendly response representing Reza Esmaeili
             appendMessage('سپاسگزارم کارفرمای گرامی! پیام و تمایل شما برای همکاری دریافت شد. بسیار خرسندم از اینکه سلیقه شما با طراحی‌های مدرن، متدهای اتولایه و استانداردهای سطح بالا همسو است. پیشنهاد می‌کنم جزئیات پروژه خود را ارسال کنید یا یک گفتگوی صوتی کوتاه داشته باشیم تا سریعاً وایدفریم‌ها و اسکچ‌های اولیه را برای پروژه‌تان استارت بزنیم. چه زمانی برای شما مناسب‌تر است؟', 'received');
         }, 1500);
     }
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chatInput.value = '';
 
         // Trigger reply
-        handleMohsenResponse();
+        handleRezaResponse();
     });
 
     chatInput.addEventListener('keypress', (e) => {
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
             appendMessage(text, 'sent');
 
             // Trigger reply
-            handleMohsenResponse();
+            handleRezaResponse();
         });
     });
 
